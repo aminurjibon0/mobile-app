@@ -1,0 +1,347 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+	v2.0 | 20110126
+	License: none (public domain)
+*/
+
+/*RESET CSS BEGIN*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*RESET CSS END*/
+/*All fonts*/
+/*****************************************************************/
+/*
+
+font-family: 'Montserrat', sans-serif;
+*/
+
+
+/*helper classes begin*/
+/*********************************************************************************/
+@font-face {
+	font-family: 'HelveticaNeue-Thin';
+	src: url('../fonts/HelveticaNeue-Thin.otf');
+}
+.container {
+	max-width: 1100px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+.align_left {
+	float: left;
+}
+.align_right {
+	float: right;
+}
+.text_center {
+	text-align: center;
+}
+.text_uppercase {
+	text-transform: uppercase;
+}
+/*helper classes end*/
+/*general classes begin*/
+/*#################################################*/
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+* {
+	box-sizing: border-box;
+}
+h1 {
+	font-size: 55px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+p {
+	font-family: 'HelveticaNeue-Thin', sans-serif;
+}
+
+/*hero section*/
+/************************/
+#hero {
+	background-image: linear-gradient(rgba(218, 51, 45, .6), rgba(218, 51, 45, .6)), url('../images/banner.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	padding: 30px 20px 0 20px;
+}
+.header {
+	overflow: hidden;
+}
+.logo img {
+	width: 100%;
+}
+.navbar {
+	margin-top: 12px;
+}
+.nav li {
+	display: inline-block;
+}
+.nav li a {
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #fff;
+	text-decoration: none;
+	padding-bottom: 6px;
+	margin-left: 30px;
+	border-bottom: 4px solid transparent;
+	transition: all .3s;
+}
+.nav li a:hover {
+	border-bottom: 4px solid #fff;
+}
+.cta {
+	margin-top: 90px;
+}
+.cta_info {
+	width: 60%;
+	padding-right: 60px;
+}
+.cta_info h1 {
+	color: #fff;
+	margin-bottom: 40px;
+}
+.cta_info .cta_para {
+	font-family: 'HelveticaNeue-Thin', sans-serif;
+	font-size: 36px;
+	color: #fff;
+}
+.cta_btn {
+	font-weight: bold;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 23px 35px 23px 75px;
+	background-color: #353535;
+	margin: 30px 0;
+	display: inline-block;
+	border-radius: 30px;
+	color: #fff;
+	position: relative;
+}
+.cta_btn i {
+	position: absolute;
+	top: 14px;
+	left: 38px;
+}
+.cta_btn:hover {
+	background-color: #383737;
+}
+.cta_img {
+	position: relative;
+	width: 40%;
+}
+.cta_img img {
+	width: 85%;
+	position: absolute;
+	right: -32px;
+	top: 40px;
+}
+/*hero end*/
+/*app feature section*/
+/************************/
+
+#app_features .container {
+	padding: 60px 20px;
+	text-align: center;
+}
+#app_features h1 {
+	margin-bottom: 40px;
+	color: #8a8a8a;
+}
+#app_features .p_features {
+	font-size: 22px;
+	padding: 0 130px;
+	line-height: 30px;
+	color: #3a3a3a;
+}
+.row {
+	margin-top: 50px;
+}
+.col_4_app {
+	width: 33.33%;
+	float: left;
+	padding: 0 45px;
+}
+.col_4_app h2 {
+	font-weight: bold;
+	font-size: 24px;
+	margin: 30px 0;
+	text-transform: uppercase;
+}
+.col_4_app p {
+	font-size: 18px;
+	line-height: 22px;
+	color: #646464;
+}
+/*app feature end*/
+
+/*nose start*/
+#nose {
+	background-image: url('../images/nose-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#nose .download_info {
+	width: 60%;
+	padding: 180px 0;
+}
+#nose .download_info h1 {
+	margin-bottom: 50px;
+	color: #fff;
+}
+.radish {
+	color: #FD6B63;
+}
+#nose .download_info p {
+	font-size: 24px;
+	line-height: 32px;
+	margin-bottom: 80px;
+}
+#nose .download_info .download_btn {
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	background: #E64C3C;
+	text-decoration: none;
+	padding: 15px;
+	border-radius: 50px;
+}
+#nose .download_info .download_btn:hover {
+	background: #d63232;
+}
+/*nose end*/
+
+/*footer start*/
+footer {
+	background-color: #3C3D48;
+}
+footer .container {
+	padding: 120px 20px;
+}
+footer h3 {
+	font-weight: bold;
+	font-size: 20px;
+	color: #fff;
+}
+footer .row {
+	margin-top: 50px;
+}
+footer .col_4_footer {
+	font-size: 15px;
+	color: #fff;
+	width: 33.33%;
+	float: left;
+	padding: 40px;
+}
+footer .col_4_footer h3 {
+	margin-bottom: 40px;
+}
+footer .ul_posts li {
+	background-image: url('../images/rectangle.png');
+	background-repeat: no-repeat;
+	padding-left: 70px;
+	margin: 15px 0;
+	line-height: 20px;
+	overflow: hidden;
+}
+footer .ul_posts li img {
+	float: left;
+	margin-right: 20px;
+}
+.block {
+	display: block;
+}
+.ul_twitter li {
+	margin: 26px 0;
+}
+.smallText {
+	font-size: 11px;
+	line-height: 25px;
+	display: block;
+}
+.p_about {
+	line-height: 20px;
+	font-style: italic;
+}
+footer .bold {
+	font-weight: bold;
+}
+.copyright {
+	font-family: Helvetica;
+	font-size: 26px;
+	padding: 20px 0;
+	text-align: center;
+	background-color: #DEE4E3;
+}
+.copyright .inline {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0 40px;
+}
+.cr::after, .me::after {
+	content: "";
+	border-right: 1px solid #000;
+	padding-left: 60px;
+}
+.copyright .images a {
+	text-decoration: none;
+	font-size: 25px;
+	padding: 0 10px;
+}
+.copyright .images a:nth-child(1) {
+	color: #324dd6;
+}
+.copyright .images a:nth-child(2) {
+	color: #E44A85;
+}
+.copyright .images a:nth-child(3) {
+	color: #53A7E7;
+}
+/*footer end*/
+/*general classes end*/
